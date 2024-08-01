@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #4a90e2;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.todo {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 500px;
+}
+
+.todo h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4a90e2;
+}
+
+.todo input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #4a90e2;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+.todo input[type="text"]:focus {
+  border-color: #357ab7;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #357ab7;
+}
+
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.del-btn, .move-btn {
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-left: 5px;
+  transition: background-color 0.3s;
+}
+
+.del-btn:hover, .move-btn:hover {
+  background-color: #c0392b;
+}
+
+.move-btn {
+  background-color: #4a90e2;
+}
+
+.move-btn:hover {
+  background-color: #357ab7;
+}
+
+li span {
+  word-break: break-word;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  .todo {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .todo h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .todo input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .add-btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  li {
+    padding: 8px;
+  }
+
+  .del-btn, .move-btn {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
